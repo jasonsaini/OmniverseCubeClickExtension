@@ -6,9 +6,8 @@ version = "1.0.0"
 authors = ["NVIDIA"]
 
 # The title and description fields are primarily for displaying extension info in UI
-title = "spawn cube"
-description="A simple python extension example to use as a starting point for your extensions."
-
+title = "Jason's Cube Spawner Extension"
+description="A simple python extension example that spawns cube in a USD file."
 # Path (relative to the root) or content of readme markdown file for UI.
 readme  = "docs/README.md"
 

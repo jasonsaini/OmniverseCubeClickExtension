@@ -22,12 +22,12 @@ class SpawnCubeExtension(omni.ext.IExt):
         self._window = ui.Window("Spawn a cube", width=300, height=300)
         with self._window.frame:
             with ui.VStack():
-                label = ui.Label("")
+                label = ui.Label("Cube Spawner")
 
 
                 def on_click():
-                    self._count += 1
-                    label.text = f"count: {self._count}"
+                    omni.kit.commands.execute("CreatePrimWithDefaultXform", prim_type="Cube", attributes={'size:':100, 'extent': [(-50,-50,-50), (50,50,50)]})
+                    print("Cube spawned!")
 
                 def on_reset():
                     self._count = 0
